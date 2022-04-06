@@ -77,6 +77,7 @@ class GPOcontracts extends Component {
 
   checkStatus = (docs,account) => {
     const res = docs.filter(doc => doc.data().manufacturerAdd == account)
+    console.log("this is response",res)
     if(res.length > 0)
     return [0,1,3];
     else
